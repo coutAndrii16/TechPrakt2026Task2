@@ -270,3 +270,49 @@ a {
     line-height: 1.7;
     flex: 1;
 }
+
+.site-footer {
+    background: var(--navy);
+    padding: 28px 0;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copy,
+.footer-author {
+    font-size: 0.82rem;
+    color: #64748b;
+}
+
+@media (max-width: 900px) {
+    .hero-article {
+        grid-template-columns: 1fr;
+    }
+    .hero-image-wrap {
+        height: 260px;
+    }
+    .hero-content {
+        padding: 24px 28px 28px;
+    }
+    .hero-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .nav { display: none; }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
