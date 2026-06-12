@@ -1,0 +1,105 @@
+/* =========================================
+   Кольорова палітра:
+     --navy:   #0f172a  (темний фон хедера)
+     --slate:  #1e293b  (другорядний темний)
+     --blue:   #3b82f6  (основний акцент)
+     --amber:  #f59e0b  (акцент жовтий)
+     --bg:     #f8fafc  (фон сторінки)
+     --text:   #1e293b  (основний текст)
+     --muted:  #64748b  (допоміжний текст)
+   ========================================= */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navy:  #0f172a;
+    --slate: #1e293b;
+    --blue:  #3b82f6;
+    --amber: #f59e0b;
+    --green: #22c55e;
+    --purple: #a855f7;
+    --bg:    #f8fafc;
+    --card:  #ffffff;
+    --text:  #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+    --shadow-hover: 0 8px 40px rgba(15, 23, 42, 0.14);
+}
+
+html {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    background-color: var(--navy);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.logo-bracket {
+    color: var(--blue);
+}
+
+.nav {
+    display: flex;
+    gap: 4px;
+}
+
+.nav-link {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+}
