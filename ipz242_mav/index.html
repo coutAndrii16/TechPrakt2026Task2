@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNews — Новини технологій</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>TechNews<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Головна</a>
+                <a href="#" class="nav-link">Технології</a>
+                <a href="#" class="nav-link">Програмування</a>
+                <a href="#" class="nav-link">AI</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- ===== HERO / FEATURED NEWS ===== -->
+<section class="hero">
+    <div class="container">
+        <span class="section-label">Головна новина</span>
+        <article class="hero-article">
+            <div class="hero-image-wrap">
+                <img
+                        src="images/hero.jpg"
+                        alt="Vite 6.0 — новий рівень швидкості"
+                        class="hero-img"
+                        onerror="this.src='https://picsum.photos/seed/vite2024/900/500'"
+                />
+            </div>
+            <div class="hero-content">
+                <span class="badge badge--blue">Інструменти</span>
+                <h1 class="hero-title">
+                    Vite 6.0: Новий рівень швидкості веб-розробки
+                </h1>
+                <p class="hero-excerpt">
+                    Команда Vite анонсувала шосту мажорну версію інструменту збірки.
+                    Оновлення приносить нову Environment API, значне прискорення
+                    холодного старту та покращену підтримку SSR. Розробники
+                    повідомляють про зменшення часу першого запуску до 40%.
+                </p>
+                <div class="article-meta">
+                    <time datetime="2024-11-26">26 листопада 2024</time>
+                    <span class="meta-dot">·</span>
+                    <span>3 хвилини читання</span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ===== NEWS GRID ===== -->
+<main class="news-section">
+    <div class="container">
+        <span class="section-label">Останні новини</span>
+        <div class="news-grid">
+
+            <!-- Стаття 1 -->
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img
+                            src="images/typescript.jpg"
+                            alt="TypeScript 5.5"
+                            class="card-img"
+                            onerror="this.src='https://picsum.photos/seed/typescript55/600/340'"
+                    />
+                    <span class="badge badge--amber">Мови</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">TypeScript 5.5: Що нового у світі статичної типізації</h2>
+                    <p class="card-excerpt">
+                        Microsoft випустила TypeScript 5.5 з виведенням типів-предикатів,
+                        регулярними виразами та значними покращеннями продуктивності
+                        компілятора для великих кодових баз.
+                    </p>
+                    <div class="article-meta">
+                        <time datetime="2024-11-20">20 листопада 2024</time>
+                        <span class="meta-dot">·</span>
+                        <span>4 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Стаття 2 -->
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img
+                            src="images/vue.jpg"
+                            alt="Vue 3.5"
+                            class="card-img"
+                            onerror="this.src='https://picsum.photos/seed/vue35/600/340'"
+                    />
+                    <span class="badge badge--green">Фреймворки</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Vue 3.5: Нові можливості Composition API та реактивності</h2>
+                    <p class="card-excerpt">
+                        Evan You та команда Vue.js представили версію 3.5 з оновленою
+                        системою реактивності, покращеною пам'яттю та новими хуками
+                        для серверного рендерингу.
+                    </p>
+                    <div class="article-meta">
+                        <time datetime="2024-11-15">15 листопада 2024</time>
+                        <span class="meta-dot">·</span>
+                        <span>5 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Стаття 3 -->
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img
+                            src="images/github.jpg"
+                            alt="GitHub Copilot"
+                            class="card-img"
+                            onerror="this.src='https://picsum.photos/seed/githubai/600/340'"
+                    />
+                    <span class="badge badge--purple">AI</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">GitHub Copilot тепер розуміє весь репозиторій цілком</h2>
+                    <p class="card-excerpt">
+                        GitHub оновив Copilot до версії з підтримкою контексту всього
+                        репозиторію. AI-асистент тепер враховує архітектуру проєкту,
+                        залежності та стиль коду при генерації пропозицій.
+                    </p>
+                    <div class="article-meta">
+                        <time datetime="2024-11-10">10 листопада 2024</time>
+                        <span class="meta-dot">·</span>
+                        <span>3 хв</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Стаття 4 -->
+            <article class="news-card">
+                <div class="card-image-wrap">
+                    <img
+                            src="images/git.jpg"
+                            alt="Git 2.47"
+                            class="card-img"
+                            onerror="this.src='https://picsum.photos/seed/git247/600/340'"
+                    />
+                    <span class="badge badge--blue">Інструменти</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Git 2.47: Incremental Reachability Bitmap прискорює клонування</h2>
+                    <p class="card-excerpt">
+                        Нова версія системи контролю версій Git отримала інкрементальні
+                        bitmap-и досяжності, що значно пришвидшують операції клонування
+                        та вибірки у великих монорепозиторіях.
+                    </p>
+                    <div class="article-meta">
+                        <time datetime="2024-11-04">4 листопада 2024</time>
+                        <span class="meta-dot">·</span>
+                        <span>2 хв</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p class="footer-copy">
+                &copy; 2024 TechNews · Технологічна практика 2026 · ІПЗ-24-2
+            </p>
+            <p class="footer-author">Виконав студент групи ІПЗ-24-2 Майданович Андрій</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
